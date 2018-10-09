@@ -2,9 +2,10 @@ package eu.seatter.jaspetclinic.services.map;
 
 import eu.seatter.jaspetclinic.model.Vet;
 import eu.seatter.jaspetclinic.services.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
-
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override

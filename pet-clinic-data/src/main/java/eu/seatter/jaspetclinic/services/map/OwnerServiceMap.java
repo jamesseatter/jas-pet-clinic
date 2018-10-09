@@ -2,9 +2,11 @@ package eu.seatter.jaspetclinic.services.map;
 
 import eu.seatter.jaspetclinic.model.Owner;
 import eu.seatter.jaspetclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
