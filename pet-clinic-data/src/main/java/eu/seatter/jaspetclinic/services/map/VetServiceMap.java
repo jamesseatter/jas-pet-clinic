@@ -1,11 +1,11 @@
 package eu.seatter.jaspetclinic.services.map;
 
 import eu.seatter.jaspetclinic.model.Vet;
-import eu.seatter.jaspetclinic.services.CrudService;
+import eu.seatter.jaspetclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {
@@ -31,4 +31,6 @@ public class VetServiceMap extends AbstractMapService<Vet, Long> implements Crud
     public void deleteById(Long id) {
         super.deleteById(id);
     }
+
+
 }
