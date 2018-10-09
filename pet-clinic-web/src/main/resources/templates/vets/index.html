@@ -1,10 +1,27 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>List of Vets</title>
 </head>
 <body>
-<h1 th:text="'List of Vets'">Place Holder</h1>
+<!--/*thymesVar id="vet" type="eu.seatter.jaspetclinic.model.Vet"*/-->
+<h1 th:text="'List of Vets'"></h1>
+<table>
+    <thead>
+    <tr>
+        <td>Id</td>
+        <td>First Name</td>
+        <td>Last Name</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="vet : ${vets}">
+        <td th:text="${vet.id}">1</td>
+        <td th:text="${vet.firstName}">Joe</td>
+        <td th:text="${vet.lastName}">Beck</td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>
