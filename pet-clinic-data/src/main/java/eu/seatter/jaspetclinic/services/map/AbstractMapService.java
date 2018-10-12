@@ -5,7 +5,7 @@ import eu.seatter.jaspetclinic.model.BaseEntity;
 import java.util.*;
 
 public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> {
-    protected Map<Long, T> map = new HashMap<>();
+    protected final Map<Long, T> map = new HashMap<>();
 
     Set<T> findAll(){
         return new HashSet<>(map.values());
@@ -37,7 +37,7 @@ public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> 
     }
 
     private Long getNextID() {
-        Long nextId = null;
+        Long nextId;
         try {
             nextId = Collections.max(map.keySet()) + 1;
         } catch (NoSuchElementException e) {
