@@ -1,30 +1,33 @@
 package eu.seatter.jaspetclinic.services.map;
 
-import eu.seatter.jaspetclinic.model.Pet;
-import eu.seatter.jaspetclinic.services.PetService;
+import eu.seatter.jaspetclinic.model.PetType;
+import eu.seatter.jaspetclinic.services.PetTypeService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
-@Service
-public class PetServiceMap extends AbstractServiceMap<Pet, Long> implements PetService {
 
+/**
+ * Created by jas on 22/10/2018
+ */
+@Service
+public class PetTypeServiceMap extends AbstractServiceMap<PetType, Long> implements PetTypeService {
     @Override
-    public Set<Pet> findAll() {
+    public Set<PetType> findAll() {
         return super.findAll();
     }
 
     @Override
-    public Pet findById(Long id) {
+    public PetType findById(Long id) {
         return super.findById(id);
     }
 
     @Override
-    public Pet save(Pet object) {
+    public PetType save(PetType object) {
         return super.save(object);
     }
 
     @Override
-    public void delete(Pet object) {
+    public void delete(PetType object) {
         super.delete(object);
     }
 
@@ -32,6 +35,5 @@ public class PetServiceMap extends AbstractServiceMap<Pet, Long> implements PetS
     public void deleteById(Long id) {
         super.deleteById(id);
     }
-
 
 }
