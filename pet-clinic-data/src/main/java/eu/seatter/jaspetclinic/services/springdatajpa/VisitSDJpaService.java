@@ -3,6 +3,8 @@ package eu.seatter.jaspetclinic.services.springdatajpa;
 import eu.seatter.jaspetclinic.model.Visit;
 import eu.seatter.jaspetclinic.repositories.VisitRepository;
 import eu.seatter.jaspetclinic.services.VisitService;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -13,6 +15,8 @@ import java.util.Set;
  * Date: 01/11/2018
  * Time: 11:28
  */
+@Service
+@Profile("springdatajpa")
 public class VisitSDJpaService implements VisitService {
 
     private final VisitRepository visitRepository;

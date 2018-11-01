@@ -2,6 +2,7 @@ package eu.seatter.jaspetclinic.services.map;
 
 import eu.seatter.jaspetclinic.model.Visit;
 import eu.seatter.jaspetclinic.services.VisitService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
@@ -11,6 +12,7 @@ import java.util.Set;
  * Date: 01/11/2018
  * Time: 11:19
  */
+@Service
 public class VisitServiceMap  extends AbstractServiceMap<Visit, Long> implements VisitService {
 
 
