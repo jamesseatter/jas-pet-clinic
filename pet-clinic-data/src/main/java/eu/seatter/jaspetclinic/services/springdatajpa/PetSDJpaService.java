@@ -16,7 +16,7 @@ import java.util.Set;
  * Time: 09:31
  */
 @Service
-@Profile("springjpadata")
+@Profile("springdatajpa")
 public class PetSDJpaService implements PetService {
 
     private final PetRepository petRepository;

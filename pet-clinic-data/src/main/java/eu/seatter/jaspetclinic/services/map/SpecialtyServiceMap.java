@@ -2,6 +2,7 @@ package eu.seatter.jaspetclinic.services.map;
 
 import eu.seatter.jaspetclinic.model.Speciality;
 import eu.seatter.jaspetclinic.services.SpecialtyService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
@@ -10,6 +11,7 @@ import java.util.Set;
  * Created by jas on 24/10/2018
  */
 @Service
+@Profile({"default","map"})
 public class SpecialtyServiceMap extends AbstractServiceMap<Speciality, Long> implements SpecialtyService {
     @Override
     public Set<Speciality> findAll() {
