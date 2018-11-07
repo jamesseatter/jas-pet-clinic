@@ -15,7 +15,7 @@ import java.util.Set;
  */
 @Service
 @Profile({"default","map"})
-public class VisitServiceMap  extends AbstractServiceMap<Visit, Long> implements VisitService {
+public class VisitServiceMap extends AbstractServiceMap<Visit, Long> implements VisitService {
 
 
     @Override

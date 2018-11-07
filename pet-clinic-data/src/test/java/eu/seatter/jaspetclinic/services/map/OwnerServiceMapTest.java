@@ -18,14 +18,17 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class OwnerServiceMapTest {
     private OwnerServiceMap ownerServiceMap;
-    final Long ownerId = 1L;
-    final String lastName = "Seatter";
+
+    private final String lastName = "Seatter";
+    private Long ownerId;
 
     @BeforeEach
     void setUp() {
         ownerServiceMap = new OwnerServiceMap(new PetTypeServiceMap(), new PetServiceMap());
+        Owner owner = Owner.builder().lastName(lastName).build();
 
-        ownerServiceMap.save(Owner.builder().id(ownerId).lastName(lastName).build());
+        ownerServiceMap.save(owner);
+        ownerId = owner.getId();
     }
 
     @Test
