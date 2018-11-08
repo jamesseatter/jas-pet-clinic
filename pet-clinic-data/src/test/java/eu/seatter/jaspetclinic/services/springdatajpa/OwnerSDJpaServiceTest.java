@@ -5,7 +5,6 @@ import eu.seatter.jaspetclinic.repositories.OwnerRepository;
 import eu.seatter.jaspetclinic.repositories.PetRepository;
 import eu.seatter.jaspetclinic.repositories.PetTypeRepository;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -27,7 +26,6 @@ import static org.mockito.Mockito.*;
  * Date: 08/11/2018
  * Time: 10:57
  */
-@Disabled
 @ExtendWith(MockitoExtension.class)
 class OwnerSDJpaServiceTest {
 

@@ -3,7 +3,6 @@ package eu.seatter.jaspetclinic.services.map;
 
 import eu.seatter.jaspetclinic.model.Owner;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.util.Set;
@@ -17,7 +16,6 @@ import static org.junit.jupiter.api.Assertions.*;
  * Date: 06/11/2018
  * Time: 15:11
  */
-@Disabled
 class OwnerServiceMapTest {
     private OwnerServiceMap ownerServiceMap;
 
