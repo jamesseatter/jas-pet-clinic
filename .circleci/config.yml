@@ -43,7 +43,10 @@ jobs:
     # - run: mvn integration-test
     - run: mvn integration-test
 
-    - run : find . -type f -regex ".*/target/surefire-reports/.*xml"
+    - run :
+        name: find XML report files
+        command: |
+          find . -type f -regex ".*/target/surefire-reports/.*xml"
 
     - run:
         name: Save test results
