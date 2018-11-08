@@ -2,6 +2,7 @@ package eu.seatter.jaspetclinic.services.map;
 
 import eu.seatter.jaspetclinic.model.Speciality;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashSet;
@@ -16,6 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
  * Date: 07/11/2018
  * Time: 23:41
  */
+@Disabled
 class SpecialtyServiceMapTest {
 
     private SpecialtyServiceMap specialtyServiceMap;
