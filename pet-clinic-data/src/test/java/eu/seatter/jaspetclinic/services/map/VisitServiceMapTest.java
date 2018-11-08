@@ -5,6 +5,7 @@ import eu.seatter.jaspetclinic.model.Pet;
 import eu.seatter.jaspetclinic.model.PetType;
 import eu.seatter.jaspetclinic.model.Visit;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
@@ -19,6 +20,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
  * Date: 07/11/2018
  * Time: 15:04
  */
+@Disabled
 class VisitServiceMapTest {
 
     private VisitServiceMap visitServiceMap;
