@@ -6,6 +6,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
+import java.util.Set;
 
 /**
  * Create by jas on 09/10/2018
@@ -74,6 +75,8 @@ public class DataLoader implements CommandLineRunner {
         owner1.setCity("Miami");
         owner1.setTelephone("123123124");
 
+        Set<Pet> petSet = owner1.getPets();
+
         Pet mikesPet = new Pet();
         mikesPet.setPetType(savedDogPetType);
         mikesPet.setOwner(owner1);
@@ -82,6 +85,16 @@ public class DataLoader implements CommandLineRunner {
         owner1.getPets().add(mikesPet);
 
         ownerService.save(owner1);
+
+        Pet mikesPet2 = new Pet();
+        mikesPet2.setPetType(savedDogPetType);
+        mikesPet2.setOwner(owner1);
+        mikesPet2.setBirthDay(LocalDate.now());
+        mikesPet2.setName("Wilco");
+        owner1.getPets().add(mikesPet2);
+
+        ownerService.save(owner1);
+
 
         Owner owner2 = new Owner();
         owner2.setFirstName("Fiona");
