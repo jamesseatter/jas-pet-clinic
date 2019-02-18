@@ -53,7 +53,7 @@ class VisitServiceMapTest {
         // Create test pet
         Pet petCat = new Pet();
         petCat.setPetType(petTypeCat);
-        petCat.setBirthDay(LocalDate.now().minusYears(2));
+        petCat.setBirthDate(LocalDate.now().minusYears(2));
         petCat.setName("Kitty");
         petCat.setId(petId);
         petCat.setOwner(owner);
