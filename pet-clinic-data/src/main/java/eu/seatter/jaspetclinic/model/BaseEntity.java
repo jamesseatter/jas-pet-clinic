@@ -24,4 +24,7 @@ public class BaseEntity implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;    //hibernate recommends boxed types instead of base types.
 
+    public boolean isNew() {
+        return this.id == null;
+    }
 }
